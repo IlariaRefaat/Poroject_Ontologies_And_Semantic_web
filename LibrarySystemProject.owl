@@ -1,0 +1,729 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3/"
+     xml:base="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-3="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#buy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#buy">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Customer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#hasBook -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#hasBook">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#hasLibrarian -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#hasLibrarian">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#isPublished -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#isPublished">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#isWritten -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#isWritten">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#loan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#loan">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Customer"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#birthdate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#birthdate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#genre -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#genre">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book"/>
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#genre"/>
+                        <owl:hasValue>Adventure</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#genre"/>
+                        <owl:hasValue>Comedy</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#genre"/>
+                        <owl:hasValue>Drama</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#genre"/>
+                        <owl:hasValue>Poetry</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#genre"/>
+                        <owl:hasValue>Romance</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#genre"/>
+                        <owl:hasValue>Science Fiction</owl:hasValue>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#genre"/>
+                        <owl:hasValue>crime</owl:hasValue>
+                    </owl:Restriction>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#library_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#library_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#location">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#price">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#price"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#title">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#isPublished"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#isWritten"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Customer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#buy"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#loan"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#hasBook"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">50</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#hasLibrarian"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Atuthor3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Atuthor3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author"/>
+        <untitled-ontology-3:birthdate>1965</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>J.K Rowling</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author"/>
+        <untitled-ontology-3:birthdate>1835</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>Mark Twain</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author"/>
+        <untitled-ontology-3:birthdate>1564</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>William Shakespear</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author"/>
+        <untitled-ontology-3:birthdate>1890</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>Agatha Christie</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author"/>
+        <untitled-ontology-3:birthdate>1990</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>Jennifer Turner</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author"/>
+        <untitled-ontology-3:birthdate>1896</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>F. Scott Fitzgerald</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author"/>
+        <untitled-ontology-3:birthdate>1900</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>Zelda Fitzgerald</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book"/>
+        <untitled-ontology-3:isPublished rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher1"/>
+        <untitled-ontology-3:isWritten rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author1"/>
+        <untitled-ontology-3:genre>Adventure</untitled-ontology-3:genre>
+        <untitled-ontology-3:price rdf:datatype="http://www.w3.org/2001/XMLSchema#float">50.0</untitled-ontology-3:price>
+        <untitled-ontology-3:title>The Adventuresof Tom Sawyer</untitled-ontology-3:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book"/>
+        <untitled-ontology-3:isPublished rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher2"/>
+        <untitled-ontology-3:isPublished rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher6"/>
+        <untitled-ontology-3:isWritten rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author2"/>
+        <untitled-ontology-3:genre>Drama</untitled-ontology-3:genre>
+        <untitled-ontology-3:price rdf:datatype="http://www.w3.org/2001/XMLSchema#float">20.0</untitled-ontology-3:price>
+        <untitled-ontology-3:title>Romeo and Juliet</untitled-ontology-3:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book"/>
+        <untitled-ontology-3:isPublished rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher3"/>
+        <untitled-ontology-3:isWritten rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Atuthor3"/>
+        <untitled-ontology-3:genre>Comedy</untitled-ontology-3:genre>
+        <untitled-ontology-3:price rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1000.0</untitled-ontology-3:price>
+        <untitled-ontology-3:title>Haryy Potter and the Philosopher&apos;s Stone</untitled-ontology-3:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book"/>
+        <untitled-ontology-3:isPublished rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher4"/>
+        <untitled-ontology-3:isWritten rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author4"/>
+        <untitled-ontology-3:genre>Crime</untitled-ontology-3:genre>
+        <untitled-ontology-3:price rdf:datatype="http://www.w3.org/2001/XMLSchema#float">150.0</untitled-ontology-3:price>
+        <untitled-ontology-3:title>Murder on the Orient Express</untitled-ontology-3:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book"/>
+        <untitled-ontology-3:isPublished rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher5"/>
+        <untitled-ontology-3:isWritten rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author5"/>
+        <untitled-ontology-3:genre>Science Fiction</untitled-ontology-3:genre>
+        <untitled-ontology-3:price rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500.0</untitled-ontology-3:price>
+        <untitled-ontology-3:title>1984</untitled-ontology-3:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book"/>
+        <untitled-ontology-3:isPublished rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher7"/>
+        <untitled-ontology-3:isWritten rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author6"/>
+        <untitled-ontology-3:isWritten rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Author7"/>
+        <untitled-ontology-3:genre>Poetry</untitled-ontology-3:genre>
+        <untitled-ontology-3:price rdf:datatype="http://www.w3.org/2001/XMLSchema#float">200.0</untitled-ontology-3:price>
+        <untitled-ontology-3:title>The Great Gatsby</untitled-ontology-3:title>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Customer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Customer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Customer"/>
+        <untitled-ontology-3:buy rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book1"/>
+        <untitled-ontology-3:buy rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book3"/>
+        <untitled-ontology-3:buy rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book5"/>
+        <untitled-ontology-3:loan rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book2"/>
+        <untitled-ontology-3:birthdate>1985</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>John Smith</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Customer2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Customer2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Customer"/>
+        <untitled-ontology-3:buy rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book2"/>
+        <untitled-ontology-3:birthdate>1992</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>Emily Johnson</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Customer3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Customer3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Customer"/>
+        <untitled-ontology-3:loan rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book2"/>
+        <untitled-ontology-3:loan rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book3"/>
+        <untitled-ontology-3:birthdate>1988</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>Sarah Johnson</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Customer4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Customer4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Customer"/>
+        <untitled-ontology-3:buy rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book2"/>
+        <untitled-ontology-3:loan rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book1"/>
+        <untitled-ontology-3:birthdate>1995</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>Daniel Smith</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Customer5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Customer5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Customer"/>
+        <untitled-ontology-3:buy rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book5"/>
+        <untitled-ontology-3:birthdate>2000</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>Sophia Brown</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#LIbrary2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#LIbrary2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library"/>
+        <untitled-ontology-3:hasBook rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book1"/>
+        <untitled-ontology-3:hasBook rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book4"/>
+        <untitled-ontology-3:hasBook rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book5"/>
+        <untitled-ontology-3:hasLibrarian rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian2"/>
+        <untitled-ontology-3:library_name>Community Library</untitled-ontology-3:library_name>
+        <untitled-ontology-3:location>Suburb Road, City B</untitled-ontology-3:location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian"/>
+        <untitled-ontology-3:birthdate>1978</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>Sarah Thomspon</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian"/>
+        <untitled-ontology-3:birthdate>1982</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>Micheal Anderson</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian"/>
+        <untitled-ontology-3:birthdate>1979</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>Emma Thompson</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian"/>
+        <untitled-ontology-3:birthdate>1985</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>David Wilson</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian"/>
+        <untitled-ontology-3:birthdate>1990</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>Jennifer Turner</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library"/>
+        <untitled-ontology-3:hasBook rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book1"/>
+        <untitled-ontology-3:hasBook rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book2"/>
+        <untitled-ontology-3:hasLibrarian rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian1"/>
+        <untitled-ontology-3:library_name>Central Library</untitled-ontology-3:library_name>
+        <untitled-ontology-3:location>DownTown Street,City A</untitled-ontology-3:location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library"/>
+        <untitled-ontology-3:hasBook rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book3"/>
+        <untitled-ontology-3:hasLibrarian rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian3"/>
+        <untitled-ontology-3:library_name>Public Library</untitled-ontology-3:library_name>
+        <untitled-ontology-3:location>Main Street, City C</untitled-ontology-3:location>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library"/>
+        <untitled-ontology-3:hasBook rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book5"/>
+        <untitled-ontology-3:hasLibrarian rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian4"/>
+        <untitled-ontology-3:location>Campus Avenue, CIty D</untitled-ontology-3:location>
+        <untitled-ontology-3:name>University Library</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library"/>
+        <untitled-ontology-3:hasBook rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Book2"/>
+        <untitled-ontology-3:hasLibrarian rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Librarian5"/>
+        <untitled-ontology-3:location>High School, City E</untitled-ontology-3:location>
+        <untitled-ontology-3:name>School Library</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher"/>
+        <untitled-ontology-3:birthdate>1935</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>HarperCollins</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher"/>
+        <untitled-ontology-3:birthdate>1935</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>Penguin Books</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher"/>
+        <untitled-ontology-3:birthdate>1927</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>Random House</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher"/>
+        <untitled-ontology-3:birthdate>1924</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>Simon &amp; Schuster</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher"/>
+        <untitled-ontology-3:birthdate>1843</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>Mcmillan Publishers</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher"/>
+        <untitled-ontology-3:birthdate>1817</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>HarperCollins</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Publisher"/>
+        <untitled-ontology-3:birthdate>1846</untitled-ontology-3:birthdate>
+        <untitled-ontology-3:name>Scribner</untitled-ontology-3:name>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
