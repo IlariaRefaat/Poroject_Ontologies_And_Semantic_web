@@ -1,0 +1,85 @@
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX uri:<http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#>
+SELECT ?title ?genre ?price WHERE {
+?Book a uri:Book.
+?Book uri:title ?title.
+?Book uri:genre ?genre.
+?Book uri:price ?price
+}
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX uri:<http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#>
+
+SELECT ?book ?title ?author ?genre ?price WHERE {
+{
+?book a uri:Book .
+?book uri:title ?title.
+?book uri:isWritten ?author.
+?book uri:genre ?genre.
+FILTER(?genre = "Adventure" || ?genre = "Drama")
+}
+UNION
+{
+?book a uri:Book .
+?book uri:title ?title.
+?book uri:isWritten ?author.
+?book uri:genre ?genre.
+FILTER(?genre = "Comedy" || ?genre = "Romance")
+}
+OPTIONAL {
+?book uri:price ?price.
+}
+}
+
+
+
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX uri:<http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#>
+
+
+SELECT ?book ?title ?author ?publisher WHERE {
+?book a uri:Book.
+?book uri:title ?title.
+OPTIONAL {
+}
+?book uri:isWritten ?author.
+OPTIONAL {
+}
+?book uri:isPublished ?publisher.
+}
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX uri:<http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#>
+SELECT ?title WHERE {
+?author a uri:Author.
+?author uri:birthdate ?birthdate.
+FILTER (?birthdate="1965").
+?book uri:isWritten ?author.
+?book uri:title ?title.
+}
+
+SELECT ?library
+WHERE {
+  ?library rdf:type <http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#Library>.
+  ?library <http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#hasBook> ?book.
+  ?library <http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#hasLibrarian> ?librarian.
+}
+
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX ont: <http://www.semanticweb.org/dell/ontologies/2023/4/untitled-ontology-3#>
+
+SELECT (COUNT(?book) AS ?bookCount)
+WHERE {
+  ?book rdf:type ont:Book.
+}
